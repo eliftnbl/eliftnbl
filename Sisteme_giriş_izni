@@ -1,0 +1,20 @@
+real_name="elif"
+real_password="1234"
+
+for i in range(3):
+    username = input("Kullanıcı adınızı giriniz : ")
+    password = input("Parolanızı giriniz : ")
+    if (username == real_name and password == real_password):
+        print("PROGRAMA HOŞGELDİN ADMİN ")
+        break
+    elif(username!=real_name and password!=real_password):
+        print("Kullanıcı adı ve parola yanlış ")
+        pass
+
+    elif(username!=real_name and password==real_password):
+        print("Kullanıcı adı yanlış ")
+        pass
+
+    elif (username == real_name and password != real_password):
+        print("Parola yanlış ")
+        pass
