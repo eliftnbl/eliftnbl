@@ -1,0 +1,7 @@
+x=int(input("İLK KENARI GİRİNİZ: "))
+y=int(input("İKİNCİ KENARI GİRİNİZ: "))
+z=int(input("ÜÇÜNCÜ KENARI GİRİNİZ: "))
+if (abs(y-z)<x<y+z ) :
+    print("ÜÇGENDİR")
+else :
+    print("ÜÇGEN DEĞİLDİR")
