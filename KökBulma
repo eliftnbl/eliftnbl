@@ -1,0 +1,15 @@
+print("Programımız 2.dereceden bir denklemin köklerini hesaplamaktadır!")
+def kok_hesapla (a,b,c):
+    delta=((b*b)-(4*a*c))
+    if delta<0:
+        çıktı="Reel kök bulunamadı "
+        return(çıktı)
+    kok1 =(-b-delta**0.5)/(2*a)
+    kok2=(-b+ delta**0.5)/(2*a)
+    return (kok1,kok2)
+
+
+a=int(input("a değerini giriniz :"))
+b=int(input("b değerini giriniz :"))
+c=int(input("c değerini giriniz :"))
+print("sonuç :" ,kok_hesapla(a,b,c))
